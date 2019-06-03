@@ -47,7 +47,7 @@ public class AlunoAdapter extends RecyclerView.Adapter<AlunoAdapter.ViewHolder> 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView nomeAluno;
         TextView cursoAluno;
-       int fotoAluno;
+        ImageView fotoAluno;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -60,7 +60,7 @@ public class AlunoAdapter extends RecyclerView.Adapter<AlunoAdapter.ViewHolder> 
         public void bind(Aluno aluno) {
             nomeAluno.setText(aluno.getNome());
             cursoAluno.setText(aluno.getCurso());
-            fotoAluno.setImageResource(aluno.getFoto().);
+            fotoAluno.setImageResource(aluno.getFotoID());
 
         }
     }

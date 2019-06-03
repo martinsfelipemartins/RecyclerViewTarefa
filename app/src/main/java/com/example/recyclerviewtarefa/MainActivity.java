@@ -20,8 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        recyclerView = findViewById(R.id.layoutRecycler);
+        recyclerView = findViewById(R.id.listaAlunosRecyclerView);
         adapter= new AlunoAdapter(listaAlunos());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -31,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
     private List<Aluno> listaAlunos() {
         List<Aluno> alunoList=new ArrayList<>();
 
-alunoList.add(new Aluno("Jéssica Milena", "Android Studio", ));
-alunoList.add(new Aluno("Jéssica Milena", "Android Studio"));
-alunoList.add(new Aluno("Jéssica Milena", "Android Studio"));
-alunoList.add(new Aluno("Jéssica Milena", "Android Studio"));
-alunoList.add(new Aluno("Jéssica Milena", "Android Studio"));
-alunoList.add(new Aluno("Jéssica Milena", "Android Studio"));
+alunoList.add(new Aluno("Jéssica Milena", "Mobile Android", R.drawable.monicageller ));
+alunoList.add(new Aluno("Fábio Tadashi", "Mobile Android", R.drawable.srmiyagi));
+alunoList.add(new Aluno("Guilherme Sartori", "Mobile Android", R.drawable.josesartori));
+alunoList.add(new Aluno("Victor Caldas", "Mobile Android", R.drawable.pessoax));
+alunoList.add(new Aluno("Tairo Roberto", "Mobile Android",R.drawable.tairoroberto));
+
 
 return alunoList;
     }

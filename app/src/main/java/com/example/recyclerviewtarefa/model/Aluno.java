@@ -6,6 +6,17 @@ import android.widget.ImageView;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Aluno {
+    private String nome;
+    private String curso;
+    private int fotoID;
+    //busca imagem pelo numero dela
+
+    public Aluno(String nome, String curso, int fotoID) {
+        this.nome = nome;
+        this.curso = curso;
+        this.fotoID = fotoID;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -29,17 +40,6 @@ public class Aluno {
     public void setFotoID(int fotoID) {
         this.fotoID = fotoID;
     }
-
-    public Aluno(String nome, String curso, int fotoID) {
-        this.nome = nome;
-        this.curso = curso;
-        this.fotoID = fotoID;
-    }
-
-    private String nome;
-    private String curso;
-    private int fotoID;
-
 
 
 }
